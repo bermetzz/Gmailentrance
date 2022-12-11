@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+
+        <EditText
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_toStartOf="@+id/mail_icon"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_edittext"
+            android:drawablePadding="30dp"
+            android:inputType="textEmailAddress"
+            android:id="@+id/edit_text"
+            android:layout_marginTop="20dp" />
+        <ImageView
+            app:layout_constraintStart_toStartOf="@+id/edit_text"
+            app:layout_constraintTop_toTopOf="@+id/edit_text"
+            android:layout_marginStart="10dp"
+            android:id="@+id/mail_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/img" />
+        <EditText
+            app:layout_constraintTop_toBottomOf="@id/edit_text"
+            android:layout_marginTop="20dp"
+            android:layout_toStartOf="@+id/menu_icon"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_edittext"
+            android:drawablePadding="30dp"
+            android:id="@+id/edit_text1" />
+        <ImageView
+            app:layout_constraintStart_toStartOf="@+id/edit_text1"
+            app:layout_constraintTop_toTopOf="@+id/edit_text1"
+            android:layout_marginStart="10dp"
+            android:id="@+id/menu_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/img_2"/>
+        <EditText
+            app:layout_constraintTop_toBottomOf="@id/edit_text1"
+            android:layout_marginTop="20dp"
+            android:layout_toStartOf="@+id/message_icon"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_edittext"
+            android:drawablePadding="30dp"
+            android:id="@+id/edit_text2" />
+        <ImageView
+            app:layout_constraintStart_toStartOf="@+id/edit_text2"
+            app:layout_constraintTop_toTopOf="@+id/edit_text2"
+            android:layout_marginStart="10dp"
+            android:id="@+id/message_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/img3"/>
+        <Button
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/edit_text2"
+            app:layout_constraintStart_toStartOf="@id/edit_text1"
+            android:layout_marginStart="26dp"
+            android:text="@string/send"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:paddingVertical="10dp"
+            android:onClick="onButtonClick"
+            android:id="@+id/btn_send"
+            android:layout_marginTop="80dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

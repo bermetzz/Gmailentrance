@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Gmail entrance</string>
+    <string name="email">Email</string>
+    <string name="send">send</string>
+</resources>
